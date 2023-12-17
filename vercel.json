@@ -12,7 +12,7 @@
       "dest": "src/index.ts"
     },
     {
-      "src/": "/diaTrabalhado/(.*)",
+      "src": "/routers/(.*)",
       "dest": "src/routers/DiaTrabalhado.ts"
     }
   ]
