@@ -1,11 +1,11 @@
-import { PrismaClient } from "@prisma/client";
+import prisma from "./db";
 import PrismaRepo from "../core/diaTrabalhado/service/PrismaRepo";
 import DiaTrabalhado from "../core/diaTrabalhado/model/DiaTrabalhado";
 
 
 export default class RepositorioPrisma implements PrismaRepo {
 
-  readonly prisma = new PrismaClient()
+  readonly prisma = prisma
 
   async create(data: DiaTrabalhado): Promise<void> {
 
