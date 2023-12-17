@@ -11,6 +11,7 @@ app.use(express.json())
 app.use(cors())
 
 app.use('/diaTrabalhado', routerDiaT)
+app.get('/', (req, res) => res.send('hello'))
 
 
 app.listen(port, () => {
